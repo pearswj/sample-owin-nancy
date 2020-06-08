@@ -1,0 +1,16 @@
+<html>
+    <script>
+        fetch("http://localhost:8080/abc?123", {
+            "headers": {
+                // "Authorization": "Bearer abcd",
+                // "Rhino-Compute-Key": "secret",
+                "User-Agent": `compute.rhino3d.js/100`
+            },
+            "method": "POST"
+        })
+        .then(r => {
+            console.log(r)
+            r.text().then(t => console.log(t))
+        })
+    </script>
+</html>
