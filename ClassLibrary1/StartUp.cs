@@ -12,8 +12,8 @@ namespace ClassLibrary1
     {
         public void Configuration(IAppBuilder app)
         {
-            //app.UseCors(CorsOptions.AllowAll);
-            //app.Use<LoggingMiddleware>();
+            app.UseCors(CorsOptions.AllowAll);
+            app.Use<LoggingMiddleware>();
             //app.Use<TokenMiddleware>();
             app.UseNancy();
         }
